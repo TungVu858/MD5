@@ -1,0 +1,16 @@
+<h1>Tạo mới danh mục</h1>
+<form [formGroup]="categoryForm" (ngSubmit)="add()">
+  <table>
+    <tr>
+      <td><label>Mã danh mục</label></td>
+      <td><input type="number" formControlName="id"></td>
+    </tr>
+    <tr>
+      <td><label>Tên danh mục</label></td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td><button>Tạo</button></td>
+    </tr>
+  </table>
+</form>
